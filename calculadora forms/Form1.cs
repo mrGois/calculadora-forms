@@ -29,6 +29,11 @@ namespace calculadora_forms
                 txtScreen.Text = "0";
             else
                 txtScreen.Text = txtScreen.Text.Substring(0, txtScreen.Text.Length - 1);
-        }    
+        }
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            if (txtScreen.Text == "0") txtScreen.Text = "";
+            txtScreen.Text = txtScreen.Text + "1";
+        }
     }
 }
